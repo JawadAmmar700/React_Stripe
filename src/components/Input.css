@@ -1,0 +1,17 @@
+input{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid red;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#label{
+    margin-left: 10px;
+}
+div{
+    margin-top: 10px;
+}
