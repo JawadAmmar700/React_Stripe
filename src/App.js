@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
-import Input from './components/Input'
-import Button from './components/CheckoutButton'
-import MyCheckout from './components/checkoutForm'
+import React, { useState } from "react"
+import Input from "./components/Input"
+import Button from "./components/CheckoutButton"
+import MyCheckout from "./components/checkoutForm"
 
-import { loadStripe } from '@stripe/stripe-js'
-import { Elements } from '@stripe/react-stripe-js'
-import './App.css'
+import { loadStripe } from "@stripe/stripe-js"
+import { Elements } from "@stripe/react-stripe-js"
+import "./App.css"
 
 const promise = loadStripe(
-  'pk_test_51ICWPNGmEcEmaWVS0lJzvO7M8jrKAeHkSroAyzFNS1USzBtWxtFeGYKJC0GpIWXMmVVeBGNEfI0nAgCes30OcLav0004kbtrco'
+  "pk_test_51ICWPNGmEcEmaWVS0lJzvO7M8jrKAeHkSroAyzFNS1USzBtWxtFeGYKJC0GpIWXMmVVeBGNEfI0nAgCes30OcLav0004kbtrco"
 )
 
 const App = () => {
-  const [username, setUsername] = useState('')
-  const [email, setEmail] = useState('')
-  const [pass, setpass] = useState('')
+  const [username, setUsername] = useState("")
+  const [email, setEmail] = useState("")
+  const [pass, setpass] = useState("")
 
   return (
     <div className="App">
